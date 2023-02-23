@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Comp from './Components/Comp';
+import Header from './Components/Header';
 
 function App() {
+const [darkTheme, setdarkTheme] = useState(false)
+    const dark ={backgroundColor:"#282c35", color:"white"}
+    const light = {backgroundColor:"white", color:"black"}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div className="App"style={darkTheme ? dark : light}>
+
+    <div className="mainContainer">
+    <Header darkTheme ={darkTheme} setdarkTheme ={setdarkTheme}/>
+    <Comp darkTheme ={darkTheme}/> 
+    </div>
+    
     </div>
   );
 }

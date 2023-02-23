@@ -1,0 +1,13 @@
+.DetailsCards{
+    height: 20%;
+    width: 100%;
+}
+.DetailsCards h2 {
+    font-size: 1.6rem;
+}
+.DetailsCards h2 , i {
+    margin: 5px 0;
+}
+.DetailsCards p{
+    margin: 12px 0;
+}

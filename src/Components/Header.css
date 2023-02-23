@@ -1,0 +1,19 @@
+.Header{
+    height: 15%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.Header h1{
+font-size: 2.5rem;
+}
+.Header button{
+font-size: 16px;
+height: 30px;
+width: 90px;
+border: none;
+border-radius: 5px;
+}
